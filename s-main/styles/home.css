@@ -1,0 +1,218 @@
+@keyframes slide-by-x {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-50% - 100px));
+	}
+}
+li {
+  list-style-type: none;
+}
+
+.hero {
+	margin-top: 0;
+}
+
+.hero__title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	color: var(--card-foreground);
+	text-transform: uppercase;
+}
+.hero__title::selection {
+	color: var(--primary);
+}
+
+.hero__video {
+	position: relative;
+	height: 50%;
+	max-width: 100%;
+}
+
+#hero-video {
+	position: sticky;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	width: 100%;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9;
+}
+
+.title {
+	font-size: 32px;
+	color: var(--primary);
+}
+
+/* WEB (что такое веб разработка) */
+
+.web__content {
+	display: flex;
+	justify-content: space-between;
+}
+.web__description {
+	max-width: 450px;
+	margin-top: 20px;
+}
+
+.web__images {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.web__images img {
+	border-radius: 8px;
+}
+
+.web__steps-title {
+	margin: 16px 0;
+}
+
+.web__list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.web__step-description {
+	max-width: 410px;
+	color: var(--muted-foreground);
+	line-height: 1.5;
+}
+
+/* WAYS (направления в вебе) */
+
+.ways__title {
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+.ways__cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ways__card:hover {
+	box-shadow: 0px 0px 10px var(--chart-2);
+}
+
+.ways__card {
+	border-radius: 8px;
+	border: 1px solid var(--input);
+  background-color: var(--card);
+	max-width: 355px;
+	padding: 15px;
+	transition: box-shadow 0.2s ease;
+}
+
+.ways__card-title {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.ways__card-description::selection {
+	color: var(--primary);
+}
+
+/* TECHNOLOGIES (лента технологий) */
+
+.technologies {
+	margin: 80px 0;
+}
+.technologies__ribbon-wrapper {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.tecnhologies__ribbon {
+	display: flex;
+	gap: 200px;
+	overflow: hidden;
+	max-height: 90px;
+	animation: slide-by-x 20s linear infinite;
+	width: max-content;
+	font-size: 0;
+}
+.technologies__title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.tecnhologies__ribbon img {
+	flex: 0 0 auto;
+	vertical-align: middle;
+}
+.tecnhologies__ribbon a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* STUDY--BLOCK (видео с мцк ктитс) */
+
+.study {
+	margin-bottom: 80px;
+}
+.study__title {
+	margin-bottom: 40px;
+}
+.study__video {
+	position: relative;
+}
+.study__video .overlay {
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+.study__video video {
+	max-width: 100%;
+}
+
+.study__video:hover .overlay {
+	opacity: 1;
+}
+.study__overlay-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 32px;
+	text-align: center;
+}
+.study__link {
+	color: var(--card-foreground);
+	text-decoration: underline;
+}
+
+.study__content {
+	display: flex;
+}
+
+.study__button {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  background-color: var(--primary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--card-foreground);
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.study__button:hover {
+  background-color: color-mix(in oklab,var(--primary) 90%,transparent);
+}

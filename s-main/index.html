@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/globals.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <title>Главная</title>
+</head>
+
+<body>
+  <header class='header'>
+    <div class="container">
+      <nav class='header__nav'>
+        <div class="header__logo logo">
+          <img src="./img/logo.svg" alt="">
+        </div>
+        <ul class='header__list'>
+          <li class='header__item'><a class='header__link' href="index.html">Главная</a></li>
+          <li class='header__item'><a class='header__link' href="./pages/algo.html">Алгоритмы</a></li>
+          <li class='header__item'><a class='header__link' href="./pages/tables.html">Таблица</a></li>
+          <li class='header__item'><a class='header__link' href="./pages/project.html">Проект</a></li>
+          <li class='header__item'><a class='header__link' href="./pages/about-me.html">Анкета</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class='main'>
+    <section class="hero">
+      <div class="hero__video">
+        <h1 class='hero__title'>веб разработка - это призвание! </h1>
+        <div class="overlay"></div>
+        <video muted id='hero-video' autoplay="true" loop='true' src='./videos/hero.mp4'>
+          <source src='./videos/hero.webm' type='video/webm' />
+          Ваш браузер не поддерживает видео
+        </video>
+      </div>
+    </section>
+    <div class="container">
+      <section class='web'>
+
+        <div class="web__content">
+          <div class="web__text">
+            <h2 class='web__title title'>Что такое веб разработка?</h2>
+            <p class='web__description'>Это создание цифровых продуктов для интернета: от сайтов и интернет-магазинов до
+              сложных веб-сервисов. За
+              кажущейся простотой страницы скрывается слаженная работа технологий, дизайна и логики — всё, что
+              обеспечивает быстродействие, безопасность и удобство для пользователя.</p>
+            <h3 class='web__steps-title'>Этапы создания</h3>
+            <ul class='web__list'>
+              <li class='web__list-item'>
+                <div class="web__step">
+                  <h4>Проектирование и дизайн</h4>
+                  <p class='web__step-description'>На этом этапе создаётся прототип будущего продукта, определяется его
+                    структура, пользовательские
+                    сценарии и визуальный стиль.</p>
+                </div>
+              </li>
+              <li class="web__list-item">
+                <div class="web__step">
+                  <h4>Вёрстка и программирование</h4>
+                  <p class='web__step-description'>Дизайн-макеты превращаются в интерактивные интерфейсы (фронтенд), а
+                    на
+                    сервере пишется логика работы
+                    приложения (бэкенд).</p>
+                </div>
+              </li>
+              <li class="web__list-item">
+                <div class="web__step">
+                  <h4>Тестирование и запуск</h4>
+                  <p class='web__step-description'>Готовый продукт проверяется на ошибки, скорость работы и удобство.
+                    После устранения недочётов проект
+                    публикуется в сети.</p>
+                </div>
+              </li>
+              <li class="web__list-item">
+                <div class="web__step">
+                  <h4>Поддержка и развитие</h4>
+                  <p class='web__step-description'>После запуска сайт или приложение нуждается в обновлениях,
+                    исправлении
+                    ошибок и добавлении нового
+                    функционала.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="web__images">
+            <img width='600' height='332' src="./img/web.jpg" alt="">
+            <img width='600' src="./img/web-2.png" alt="">
+          </div>
+      </section>
+      <section class="ways">
+        <h2 class='ways__title title'>Направления</h2>
+        <div class="ways__cards">
+          <article class="ways__card">
+            <h3 class='ways__card-title'>frontend</h3>
+            <p class='ways__card-description'>Клиентская часть веб-приложения, которую пользователь видит и с чем
+              взаимодействует. Это всё, что
+              происходит в браузере: вёрстка, стили, анимации, обработка действий. Создаётся на HTML, CSS и JavaScript.
+            </p>
+          </article>
+          <article class="ways__card">
+            <h3 class='ways__card-title'>fullstack</h3>
+            <p class='ways__card-description'>Универсальная специализация, охватывающая как клиентскую, так и серверную
+              часть разработки. Fullstack-разработчик способен создать продукт от проектирования интерфейса (frontend)
+              до настройки серверной логики и баз данных (backend). Это позволяет видеть проект целиком и эффективно
+              решать комплексные задачи.
+            </p>
+          </article>
+          <article class="ways__card">
+            <h3 class='ways__card-title'>backend</h3>
+            <p class='ways__card-description'>Невидимая для пользователя серверная часть приложения. Отвечает за
+              хранение данных, бизнес-логику,
+              безопасность и интеграцию с внешними сервисами. Работает на языках вроде Python, PHP, Java или Node.js,
+              взаимодействуя с базами данных и API.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+    <section class='technologies'>
+      <h2 class='technologies__title title'>Примеры технологий</h2>
+      <div class="technologies__ribbon-wrapper">
+        <div class="tecnhologies__ribbon">
+          <a href="https://en.wikipedia.org/wiki/HTML">
+            <img loading='lazy' width='80' src="./img/html.png" alt="">
+          </a>
+
+          <a href="https://ru.wikipedia.org/wiki/CSS">
+            <img loading='lazy' width='65' src="./img/css.png" alt="">
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/JavaScript#:~:text=JavaScript%20(JS)%20is%20a%20programming,Screenshot%20of%20JavaScript%20source%20code">
+            <img loading='lazy' width='80' src="./img/js.png" alt="">
+          </a>
+          <a href="https://www.java.com/ru/">
+            <img loading='lazy' width='50' src="./img/java.svg" alt="">
+          </a>
+          <a href="https://en.wikipedia.org/wiki/PHP">
+            <img loading='lazy' width='80' src="./img/php.svg" alt="">
+          </a>
+          <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">
+            <img loading='lazy' width='80' src="./img/python.png" alt="">
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)#:~:text=C%23%20(%2F%CB%8Csi%CB%90%20%CB%88,C%23">
+            <img loading='lazy' src="./img/csharp.png" width='80' alt="">
+          </a>
+          <a href="https://en.wikipedia.org/wiki/HTML">
+            <img loading='lazy' width='80' src="./img/html.png" alt="">
+          </a>
+          <a href="https://ru.wikipedia.org/wiki/CSS">
+            <img loading='lazy' width='65' src="./img/css.png" alt="">
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/JavaScript#:~:text=JavaScript%20(JS)%20is%20a%20programming,Screenshot%20of%20JavaScript%20source%20code">
+            <img loading='lazy' width='80' src="./img/js.png" alt="">
+          </a>
+          <a href="https://www.java.com/ru/">
+            <img loading='lazy' width='50' src="./img/java.svg" alt="">
+          </a>
+          <a href="https://en.wikipedia.org/wiki/PHP">
+            <img loading='lazy' width='80' src="./img/php.svg" alt="">
+          </a>
+          <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">
+            <img loading='lazy' width='80' src="./img/python.png" alt="">
+          </a>
+
+          <a
+            href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)#:~:text=C%23%20(%2F%CB%8Csi%CB%90%20%CB%88,C%23">
+            <img loading='lazy' src="./img/csharp.png" width='80' alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class='study'>
+      <div class="container">
+        <h2 class='study__title title'>Где обучиться?</h2>
+        <div class="study__content">
+          <div class="study__video">
+            <div class="overlay">
+              <p class='study__overlay-text'>В топ 1 техникуме Казани! <br> <a href="https://mck-ktits.ru/"
+                  class='study__link'>МЦК-КТИТС</a></p>
+            </div>
+            <video muted src="./videos/mck.mp4" loop='loop' autoplay='true'>
+              <source src='./videos/mck.webm' type='video/webm'>
+              Ваш браузер не поддерживает видео
+            </video>
+          </div>
+        </div>
+        <a href='https://mck-ktits.ru/' class='study__button'>Перейти</a>
+      </div>
+    </section>
+  </main>
+  <footer class='footer'>
+    <div class="container">
+      <nav class='footer__nav'>
+        <div class="footer__logo logo">
+          <img src="./img/logo.svg" alt="">
+          <p class='footer__name'>Сафин Самир <br> Радикович 227ВЕБ</p>
+        </div>
+        <ul class='footer__list'>
+          <li class='footer__item'><a class='footer__link' href="index.html">Главная</a></li>
+          <li class='footer__item'><a class='footer__link' href="./pages/algo.html">Алгоритмы</a></li>
+          <li class='footer__item'><a class='footer__link' href="./pages/tables.html">Таблица</a></li>
+          <li class='footer__item'><a class='footer__link' href="./pages/project.html">Проект</a></li>
+          <li class='footer__item'><a class='footer__link' href="./pages/about-me.html">Анкета</a></li>
+        </ul>
+        <ul class='footer__list'>
+          <li><a href="https://t.me/DaoSpeedTelly"><img loading='lazy' width='32' src="./img/telegrampng.png" alt=""></a></li>
+          <li><a href="https://m.vk.com/id613212661"><img loading='lazy' width='32' src="./img/vk.webp" alt=""></a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>

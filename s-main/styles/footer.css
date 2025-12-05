@@ -1,0 +1,39 @@
+
+.footer {
+	padding: 20px;
+  border-top: 1px solid var(--input);
+}
+.footer__logo {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.footer__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+
+.footer__list {
+	display: flex;
+	gap: 20px;
+}
+
+.footer__list li {
+  list-style-type: none;
+}
+
+.footer__link {
+  color: var(--muted-foreground);
+	transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: var(--card-foreground);
+}
+
+.footer__name {
+  color: var(--card-foreground);
+}
